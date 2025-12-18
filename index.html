@@ -3,8 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="El mejor gimnasio de Godoy Cruz, Mendoza. Musculación, Funcional, Boxeo, Defensa Personal, GAP, Zumba y más. 2 sucursales. ¡Tu transformación comienza aquí!">
+    <meta name="keywords" content="gimnasio, gym, godoy cruz, mendoza, musculación, funcional, boxeo, defensa personal, zumba, gap, strongman">
+    <meta name="author" content="El Caverna Gym">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="El Caverna Gym | Gimnasio en Godoy Cruz, Mendoza">
+    <meta property="og:description" content="Tu transformación comienza aquí. El mejor gym de Godoy Cruz.">
+    <meta property="og:type" content="website">
+    
     <title>El Caverna Gym | Gimnasio en Godoy Cruz, Mendoza</title>
-    <meta name="description" content="El mejor gimnasio de Godoy Cruz. Musculación, Funcional, Boxeo, Defensa Personal y más. 2 sucursales.">
+    
+    <!-- Preload Critical Fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Open+Sans:wght@400;600&display=swap" as="style">
+    
     <!-- Bootstrap 5 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <!-- Bootstrap Icons -->
@@ -14,17 +26,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="#hero">
-                <img src="Img/Logo/Logo.png" alt="Logo El Caverna Gym" width="50" height="50" class="me-2">
+                <img src="assets/img/logo/logo.png" alt="Logo El Caverna Gym" width="50" height="50" class="me-2" loading="eager">
                 <span>El Caverna Gym</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -33,94 +45,96 @@
                     <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
                     <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#sucursales-horarios">Sucursales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sucursales">Sucursales</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- HERO -->
-    <section id="hero" class="d-flex align-items-center justify-content-center text-center">
-        <div class="container position-relative">
-            <img src="Img/Logo/Logo.png" alt="El Caverna Gym Logo" class="mb-3 logo-hero">
+    <!-- HERO FULL-SCREEN - SIN OVERLAY -->
+    <section id="hero" class="hero-fullscreen d-flex align-items-center justify-content-center text-center">
+        <div class="container position-relative hero-content">
             <h1 class="hero-title">El dolor es pasajero,<br>el orgullo es eterno</h1>
             <p class="hero-subtitle">Tu transformación comienza aquí</p>
+            <a href="#actividades" class="btn btn-primary btn-lg mt-4">Ver Actividades</a>
         </div>
     </section>
 
     <!-- ACTIVIDADES -->
-    <section id="actividades" class="container py-5">
-        <div class="text-center">
-            <h2 class="section-title">Actividades</h2>
+    <section id="actividades" class="container py-5 my-5">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Nuestras Actividades</h2>
+            <p class="section-subtitle">Elegí la que más se adapte a tus objetivos</p>
         </div>
-        <div class="row g-4 justify-content-center mt-4">
-            <div class="col-md-4">
-                <div class="card h-100 text-center">
-                    <img src="Img/Actividades/Rutina personal.png" alt="Rutinas Personalizadas" class="card-img-top" style="height: 220px; object-fit: cover;">
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-3">
+                <div class="card activity-card h-100 text-center">
+                    <img src="assets/img/actividades/Rutina personal.png" alt="Rutinas Personalizadas" class="card-img-top" loading="lazy" width="300" height="220">
                     <div class="card-body">
                         <h5 class="card-title">Rutinas Personalizadas</h5>
                         <p class="card-text">Entrenamientos adaptados a tus objetivos y necesidades, guiados por profesionales.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card h-100 text-center">
-                    <img src="Img/Actividades/Musculación.png" alt="Musculación" class="card-img-top" style="height: 220px; object-fit: cover;">
+            <div class="col-md-6 col-lg-3">
+                <div class="card activity-card h-100 text-center">
+                    <img src="assets/img/actividades/Musculación.png" alt="Musculación" class="card-img-top" loading="lazy" width="300" height="220">
                     <div class="card-body">
                         <h5 class="card-title">Musculación</h5>
                         <p class="card-text">Zona de pesas y máquinas para desarrollar fuerza y masa muscular.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card h-100 text-center">
-                    <img src="Img/Actividades/funcional.png" alt="Funcional" class="card-img-top" style="height: 220px; object-fit: cover;">
+            <div class="col-md-6 col-lg-3">
+                <div class="card activity-card h-100 text-center">
+                    <img src="assets/img/actividades/funcional.png" alt="Funcional" class="card-img-top" loading="lazy" width="300" height="220">
                     <div class="card-body">
                         <h5 class="card-title">Funcional</h5>
                         <p class="card-text">Entrenamientos dinámicos para mejorar tu rendimiento físico general.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card h-100 text-center">
-                    <img src="Img/Actividades/Boxeo.jpg" alt="Boxeo" class="card-img-top" style="height: 220px; object-fit: cover;">
+            <div class="col-md-6 col-lg-3">
+                <div class="card activity-card h-100 text-center">
+                    <img src="assets/img/actividades/Boxeo.jpg" alt="Boxeo" class="card-img-top" loading="lazy" width="300" height="220">
                     <div class="card-body">
                         <h5 class="card-title">Boxeo</h5>
-                        <p class="card-text">Clases para todos los niveles, mejora tu técnica, resistencia y confianza.</p>
+                        <p class="card-text">Clases para todos los niveles, mejorá tu técnica, resistencia y confianza.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card h-100 text-center">
-                    <img src="Img/Actividades/defensa.webp" alt="Defensa Personal" class="card-img-top" style="height: 220px; object-fit: cover;">
+            <div class="col-md-6 col-lg-3">
+                <div class="card activity-card h-100 text-center">
+                    <img src="assets/img/actividades/defensa.webp" alt="Defensa Personal" class="card-img-top" loading="lazy" width="300" height="220">
                     <div class="card-body">
                         <h5 class="card-title">Defensa Personal</h5>
-                        <p class="card-text">Aprende técnicas efectivas para protegerte y ganar seguridad.</p>
+                        <p class="card-text">Aprendé técnicas efectivas para protegerte y ganar seguridad.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card h-100 text-center">
-                    <img src="Img/Actividades/Strongman.png" alt="Strongman" class="card-img-top" style="height: 220px; object-fit: cover;">
+            <div class="col-md-6 col-lg-3">
+                <div class="card activity-card h-100 text-center">
+                    <img src="assets/img/actividades/Strongman.png" alt="Strongman" class="card-img-top" loading="lazy" width="300" height="220">
                     <div class="card-body">
                         <h5 class="card-title">Strongman</h5>
-                        <p class="card-text">Desafía tus límites con ejercicios de fuerza y potencia extrema.</p>
+                        <p class="card-text">Desafiá tus límites con ejercicios de fuerza y potencia extrema.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card h-100 text-center">
-                    <img src="Img/Actividades/gap.webp" alt="GAP" class="card-img-top" style="height: 220px; object-fit: cover;">
+            <div class="col-md-6 col-lg-3">
+                <div class="card activity-card h-100 text-center">
+                    <img src="assets/img/actividades/gap.webp" alt="GAP" class="card-img-top" loading="lazy" width="300" height="220">
                     <div class="card-body">
                         <h5 class="card-title">GAP</h5>
                         <p class="card-text">Glúteos, abdominales y piernas: tonificá y fortalecé tu cuerpo.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card h-100 text-center">
-                    <img src="Img/Actividades/Zumba.png" alt="Zumba" class="card-img-top" style="height: 220px; object-fit: cover;">
+            <div class="col-md-6 col-lg-3">
+                <div class="card activity-card h-100 text-center">
+                    <img src="assets/img/actividades/Zumba.png" alt="Zumba" class="card-img-top" loading="lazy" width="300" height="220">
                     <div class="card-body">
                         <h5 class="card-title">Zumba</h5>
                         <p class="card-text">Divertite y quemá calorías con clases de baile y ritmo latino.</p>
@@ -131,33 +145,34 @@
     </section>
 
     <!-- PRODUCTOS -->
-    <section id="productos" class="py-5 bg-productos">
+    <section id="productos" class="py-5 bg-light-section">
         <div class="container">
-            <div class="text-center">
+            <div class="text-center mb-5">
                 <h2 class="section-title">Productos</h2>
+                <p class="section-subtitle">Todo lo que necesitás para tu entrenamiento</p>
             </div>
-            <div class="row g-4 justify-content-center mt-4">
-                <div class="col-md-4">
-                    <div class="card h-100 text-center">
-                        <img src="Img/Productos/Suplementos.jpg" alt="Suplementos Deportivos" class="card-img-top" style="height: 220px; object-fit: cover;">
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card product-card h-100 text-center">
+                        <img src="assets/img/productos/Suplementos.jpg" alt="Suplementos Deportivos" class="card-img-top" loading="lazy" width="300" height="220">
                         <div class="card-body">
                             <h5 class="card-title">Suplementos Deportivos</h5>
                             <p class="card-text">Proteínas, creatina, aminoácidos, pre-entrenos y más. Todo lo que necesitás para potenciar tu entrenamiento.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card h-100 text-center">
-                        <img src="Img/Productos/Ropa deportiva.jpg" alt="Ropa Deportiva" class="card-img-top" style="height: 220px; object-fit: cover;">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card product-card h-100 text-center">
+                        <img src="assets/img/productos/Ropa deportiva.jpg" alt="Ropa Deportiva" class="card-img-top" loading="lazy" width="300" height="220">
                         <div class="card-body">
                             <h5 class="card-title">Ropa Deportiva</h5>
-                            <p class="card-text">Remeras, shorts, calzas, tops y accesorios con el logo de El Caverna Gym. ¡Entrená con estilo!</p>
+                            <p class="card-text">Remeras, shorts, calzas, tops y accesorios con el logo de El Caverna Gym. ¡Entren con estilo!</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card h-100 text-center">
-                        <img src="Img/Productos/Accesorios.jpg" alt="Shakers y Accesorios" class="card-img-top" style="height: 220px; object-fit: cover;">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card product-card h-100 text-center">
+                        <img src="assets/img/productos/Accesorios.jpg" alt="Shakers y Accesorios" class="card-img-top" loading="lazy" width="300" height="220">
                         <div class="card-body">
                             <h5 class="card-title">Shakers y Accesorios</h5>
                             <p class="card-text">Botellas, shakers, guantes, cinturones y más para acompañar tu rutina diaria.</p>
@@ -168,67 +183,346 @@
         </div>
     </section>
 
-    <!-- GALERÍA -->
-    <section id="galeria" class="container py-5">
-        <div class="text-center">
-            <h2 class="section-title">Galería</h2>
-        </div>
-        <div class="row g-4 mt-4">
-            <div class="col-6 col-sm-6 col-md-3">
-                <div class="gallery-item">
-                    <img src="Img/Galeria/Gym 1.jpg" class="img-fluid w-100" style="height: 280px; object-fit: cover;" alt="Gimnasio El Caverna 1">
+    <!-- ESTADÍSTICAS -->
+    <section id="estadisticas" class="stats-section py-5">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <i class="bi bi-people-fill stat-icon"></i>
+                        <h3 class="stat-number" data-target="300">0</h3>
+                        <p class="stat-label">Alumnos Activos</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-6 col-sm-6 col-md-3">
-                <div class="gallery-item">
-                    <img src="Img/Galeria/Gym 2.jpg" class="img-fluid w-100" style="height: 280px; object-fit: cover;" alt="Gimnasio El Caverna 2">
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <i class="bi bi-trophy-fill stat-icon"></i>
+                        <h3 class="stat-number" data-target="5">0</h3>
+                        <p class="stat-label">Años de Experiencia</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-6 col-sm-6 col-md-3">
-                <div class="gallery-item">
-                    <img src="Img/Galeria/Gym 3.webp" class="img-fluid w-100" style="height: 280px; object-fit: cover;" alt="Gimnasio El Caverna 3">
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <i class="bi bi-geo-alt-fill stat-icon"></i>
+                        <h3 class="stat-number" data-target="2">0</h3>
+                        <p class="stat-label">Sucursales</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-6 col-sm-6 col-md-3">
-                <div class="gallery-item">
-                    <img src="Img/Galeria/Gym 4.webp" class="img-fluid w-100" style="height: 280px; object-fit: cover;" alt="Gimnasio El Caverna 4">
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <i class="bi bi-lightning-fill stat-icon"></i>
+                        <h3 class="stat-number" data-target="8">0</h3>
+                        <p class="stat-label">Actividades Diferentes</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- TESTIMONIOS -->
-    <section id="testimonios" class="py-5 bg-productos">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-title">Testimonios</h2>
+    <!-- GALERÍA LIGHTBOX -->
+    <section id="galeria" class="container py-5 my-5">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Nuestras Instalaciones</h2>
+            <p class="section-subtitle">Conocé nuestro espacio de entrenamiento</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item" data-index="0">
+                <img src="assets/img/galeria/Gym 1.jpg" alt="Gimnasio El Caverna 1" loading="lazy">
+                <div class="gallery-overlay">
+                    <i class="bi bi-zoom-in"></i>
+                </div>
             </div>
-            <div class="row justify-content-center g-4 mt-4">
-                <div class="col-md-4">
-                    <div class="card testimonial-card h-100">
-                        <div class="card-body">
-                            <div class="testimonial-stars">★★★★★</div>
-                            <p class="card-text">"¡El mejor gym de Godoy Cruz! Los profes siempre atentos y el ambiente es genial."</p>
-                            <h6 class="card-title mb-0 mt-3"><strong>Martín R.</strong></h6>
+            <div class="gallery-item" data-index="1">
+                <img src="assets/img/galeria/Gym 2.jpg" alt="Gimnasio El Caverna 2" loading="lazy">
+                <div class="gallery-overlay">
+                    <i class="bi bi-zoom-in"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-index="2">
+                <img src="assets/img/galeria/Gym 3.webp" alt="Gimnasio El Caverna 3" loading="lazy">
+                <div class="gallery-overlay">
+                    <i class="bi bi-zoom-in"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-index="3">
+                <img src="assets/img/galeria/Gym 4.webp" alt="Gimnasio El Caverna 4" loading="lazy">
+                <div class="gallery-overlay">
+                    <i class="bi bi-zoom-in"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL LIGHTBOX -->
+    <div id="lightboxModal" class="lightbox-modal">
+        <button class="lightbox-close" aria-label="Cerrar galería">&times;</button>
+        <button class="lightbox-prev" aria-label="Imagen anterior">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button class="lightbox-next" aria-label="Imagen siguiente">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="">
+            <div class="lightbox-counter">
+                <span id="lightboxCounter">1 / 4</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- TESTIMONIOS CARRUSEL MEJORADO -->
+    <section id="testimonios" class="py-5 bg-light-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Lo que dicen nuestros alumnos</h2>
+                <p class="section-subtitle">Experiencias reales de quienes entrenan con nosotros</p>
+            </div>
+            <div id="testimoniosCarousel" class="carousel slide position-relative" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-inner">
+                    <!-- Testimonio 1 -->
+                    <div class="carousel-item active">
+                        <div class="testimonial-card-carousel">
+                            <div class="testimonial-quote-icon">"</div>
+                            <div class="testimonial-avatar">
+                                <img src="https://i.pravatar.cc/80?img=12" alt="Avatar Martín R.">
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">¡El mejor gym de Godoy Cruz! Los profes siempre atentos y el ambiente es genial. Llevo 6 meses y los cambios son increíbles.</p>
+                                <h6 class="testimonial-author"><strong>Martín R.</strong></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonio 2 -->
+                    <div class="carousel-item">
+                        <div class="testimonial-card-carousel">
+                            <div class="testimonial-quote-icon">"</div>
+                            <div class="testimonial-avatar">
+                                <img src="https://i.pravatar.cc/80?img=47" alt="Avatar Lucía G.">
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">Las clases de funcional y boxeo son súper completas. Me encanta la energía del lugar. ¡Recomendado 100%!</p>
+                                <h6 class="testimonial-author"><strong>Lucía G.</strong></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonio 3 -->
+                    <div class="carousel-item">
+                        <div class="testimonial-card-carousel">
+                            <div class="testimonial-quote-icon">"</div>
+                            <div class="testimonial-avatar">
+                                <img src="https://i.pravatar.cc/80?img=33" alt="Avatar Santiago P.">
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">Me encanta la variedad de actividades y la flexibilidad de horarios. Pude combinar musculación con GAP.</p>
+                                <h6 class="testimonial-author"><strong>Santiago P.</strong></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonio 4 -->
+                    <div class="carousel-item">
+                        <div class="testimonial-card-carousel">
+                            <div class="testimonial-quote-icon">"</div>
+                            <div class="testimonial-avatar">
+                                <img src="https://i.pravatar.cc/80?img=45" alt="Avatar Carolina M.">
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">Empecé sin experiencia previa y los profes me guiaron paso a paso. Ahora entreno 4 veces por semana y me siento genial.</p>
+                                <h6 class="testimonial-author"><strong>Carolina M.</strong></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonio 5 -->
+                    <div class="carousel-item">
+                        <div class="testimonial-card-carousel">
+                            <div class="testimonial-quote-icon">"</div>
+                            <div class="testimonial-avatar">
+                                <img src="https://i.pravatar.cc/80?img=15" alt="Avatar Diego F.">
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">El ambiente familiar y motivador hace que no quieras faltar. Las instalaciones están impecables.</p>
+                                <h6 class="testimonial-author"><strong>Diego F.</strong></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonio 6 -->
+                    <div class="carousel-item">
+                        <div class="testimonial-card-carousel">
+                            <div class="testimonial-quote-icon">"</div>
+                            <div class="testimonial-avatar">
+                                <img src="https://i.pravatar.cc/80?img=48" alt="Avatar Ana L.">
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">Las clases de Zumba son lo mejor para desconectar después del trabajo. Quemás calorías sin darte cuenta.</p>
+                                <h6 class="testimonial-author"><strong>Ana L.</strong></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonio 7 -->
+                    <div class="carousel-item">
+                        <div class="testimonial-card-carousel">
+                            <div class="testimonial-quote-icon">"</div>
+                            <div class="testimonial-avatar">
+                                <img src="https://i.pravatar.cc/80?img=52" alt="Avatar Pablo S.">
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">Excelente relación calidad-precio. El equipamiento es de primera y siempre está todo limpio y ordenado.</p>
+                                <h6 class="testimonial-author"><strong>Pablo S.</strong></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonio 8 -->
+                    <div class="carousel-item">
+                        <div class="testimonial-card-carousel">
+                            <div class="testimonial-quote-icon">"</div>
+                            <div class="testimonial-avatar">
+                                <img src="https://i.pravatar.cc/80?img=44" alt="Avatar Valeria T.">
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">Me ayudaron a cumplir mi objetivo de bajar 15 kilos con un plan personalizado. Súper agradecida.</p>
+                                <h6 class="testimonial-author"><strong>Valeria T.</strong></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonio 9 -->
+                    <div class="carousel-item">
+                        <div class="testimonial-card-carousel">
+                            <div class="testimonial-quote-icon">"</div>
+                            <div class="testimonial-avatar">
+                                <img src="https://i.pravatar.cc/80?img=68" alt="Avatar Rodrigo N.">
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">Las clases de defensa personal son excelentes. Ganás confianza y seguridad además de hacer ejercicio.</p>
+                                <h6 class="testimonial-author"><strong>Rodrigo N.</strong></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonio 10 -->
+                    <div class="carousel-item">
+                        <div class="testimonial-card-carousel">
+                            <div class="testimonial-quote-icon">"</div>
+                            <div class="testimonial-avatar">
+                                <img src="https://i.pravatar.cc/80?img=49" alt="Avatar Micaela B.">
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">Vine a probar una clase gratis y me quedé. La atención personalizada marca la diferencia.</p>
+                                <h6 class="testimonial-author"><strong>Micaela B.</strong></h6>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card testimonial-card h-100">
-                        <div class="card-body">
-                            <div class="testimonial-stars">★★★★★</div>
-                            <p class="card-text">"Las clases de funcional y boxeo son súper completas. ¡Recomendado!"</p>
-                            <h6 class="card-title mb-0 mt-3"><strong>Lucía G.</strong></h6>
-                        </div>
+                <!-- Controles posicionados FUERA del contenido -->
+                <button class="carousel-control-prev testimonial-carousel-prev" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="prev" aria-label="Testimonio anterior">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next testimonial-carousel-next" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="next" aria-label="Testimonio siguiente">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <!-- Indicadores -->
+                <div class="carousel-indicators testimonial-indicators">
+                    <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="4"></button>
+                    <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="5"></button>
+                    <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="6"></button>
+                    <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="7"></button>
+                    <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="8"></button>
+                    <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="9"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="container py-5 my-5">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Preguntas Frecuentes</h2>
+            <p class="section-subtitle">Resolvé tus dudas antes de empezar</p>
+        </div>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                        ¿Necesito experiencia previa para empezar?
+                    </button>
+                </h3>
+                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        No, tenemos clases y rutinas para todos los niveles, desde principiantes hasta avanzados. Nuestros profesores te guían paso a paso, adaptando los ejercicios a tu condición física actual y objetivos personales.
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card testimonial-card h-100">
-                        <div class="card-body">
-                            <div class="testimonial-stars">★★★★★</div>
-                            <p class="card-text">"Me encanta la variedad de actividades y la flexibilidad de horarios."</p>
-                            <h6 class="card-title mb-0 mt-3"><strong>Santiago P.</strong></h6>
-                        </div>
+            </div>
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                        ¿Se pueden combinar actividades?
+                    </button>
+                </h3>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        ¡Sí, totalmente! Podés combinar musculación con funcional, boxeo con GAP, o la combinación que más te guste. Contamos con planes especiales para quienes deseen acceder a múltiples actividades. <strong>Consultá por WhatsApp</strong> para conocer nuestros planes combinados.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                        ¿Cuáles son los horarios?
+                    </button>
+                </h3>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        <strong>Lunes a Viernes:</strong> 7:00 a 23:00<br>
+                        <strong>Sábados:</strong> 8:00 a 13:00<br>
+                        <strong>Domingos:</strong> Cerrado<br><br>
+                        Los horarios pueden variar según la sucursal y la actividad. Te recomendamos consultar horarios específicos de clases grupales por WhatsApp.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                        ¿Tienen clases grupales?
+                    </button>
+                </h3>
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Sí, ofrecemos múltiples clases grupales: Funcional, Boxeo, GAP, Zumba, Defensa Personal y Strongman. Cada actividad tiene horarios específicos durante la semana. <strong>Contactanos por WhatsApp</strong> para recibir la grilla completa de horarios actualizada.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                        ¿Puedo probar una clase gratis?
+                    </button>
+                </h3>
+                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        ¡Sí! Ofrecemos una <strong>clase de prueba totalmente gratuita</strong> para que conozcas nuestras instalaciones, profes y ambiente. Es la mejor manera de ver si El Caverna Gym es para vos. <strong>Contactanos por WhatsApp</strong> y agendamos tu clase de prueba en el horario que te quede más cómodo.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                        ¿Se puede usar las dos sucursales?
+                    </button>
+                </h3>
+                <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Por el momento, la membresía te da acceso únicamente a la sucursal en la cual te asociás. Esto nos permite brindarte un mejor servicio personalizado y mantener la calidad de atención que nos caracteriza. Consultá por planes especiales si necesitás acceso a ambas sedes.
                     </div>
                 </div>
             </div>
@@ -236,37 +530,40 @@
     </section>
 
     <!-- SUCURSALES -->
-    <section id="sucursales-horarios" class="container py-5 my-5">
-        <div class="text-center">
-            <h2 class="section-title">Nuestras Sucursales</h2>
-        </div>
-        <div class="row g-4 mt-4">
-            <div class="col-md-6">
-                <div class="sucursal-card">
-                    <h4><i class="bi bi-geo-alt-fill me-2"></i>Sucursal Cervantes</h4>
-                    <p><strong>Dirección:</strong> Cervantes 1886, Godoy Cruz</p>
-                    <p><strong>Horarios:</strong><br>
-                        Lunes a Viernes: 8:00–13:00 y 14:00–23:00<br>
-                        Sábado: 8:00–13:00<br>
-                        Domingo: Cerrado
-                    </p>
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.710903481382!2d-68.84638992358273!3d-32.94017067360757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e08a4db145f6b%3A0x6f8b0c42d9cf02c!2sCervantes%201886%2C%20Godoy%20Cruz%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1696000000000!5m2!1ses!2sar" 
-                        width="100%" height="280" allowfullscreen="" loading="lazy"></iframe>
-                </div>
+    <section id="sucursales" class="py-5 bg-light-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Nuestras Sucursales</h2>
+                <p class="section-subtitle">Elegí la más cercana a vos</p>
             </div>
-            <div class="col-md-6">
-                <div class="sucursal-card">
-                    <h4><i class="bi bi-geo-alt-fill me-2"></i>Sucursal Av. San Martín Sur</h4>
-                    <p><strong>Dirección:</strong> Av. San Martín Sur 1010, Godoy Cruz</p>
-                    <p><strong>Horarios:</strong><br>
-                        Lunes a Viernes: 7:00–13:00 y 14:00–22:00<br>
-                        Sábado: 8:00–13:00<br>
-                        Domingo: Cerrado
-                    </p>
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.883032636968!2d-68.84880012358285!3d-32.93568037361066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e08a59a1b3c27%3A0xf7f5c87e3f4e4f9b!2sAv.%20San%20Mart%C3%ADn%20Sur%201010%2C%20M5504%20Godoy%20Cruz%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1696000000000!5m2!1ses!2sar" 
-                        width="100%" height="280" allowfullscreen="" loading="lazy"></iframe>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="sucursal-card">
+                        <h4><i class="bi bi-geo-alt-fill me-2"></i>Sucursal Cervantes</h4>
+                        <p><strong>Dirección:</strong> Cervantes 1886, Godoy Cruz</p>
+                        <p><strong>Horarios:</strong><br>
+                            Lunes a Viernes: 8:00–13:00 y 14:00–23:00<br>
+                            Sábado: 8:00–13:00<br>
+                            Domingo: Cerrado
+                        </p>
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.710903481382!2d-68.84638992358273!3d-32.94017067360757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e08a4db145f6b%3A0x6f8b0c42d9cf02c!2sCervantes%201886%2C%20Godoy%20Cruz%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1696000000000!5m2!1ses!2sar" 
+                            width="100%" height="280" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="sucursal-card">
+                        <h4><i class="bi bi-geo-alt-fill me-2"></i>Sucursal Av. San Martín Sur</h4>
+                        <p><strong>Dirección:</strong> Av. San Martín Sur 1010, Godoy Cruz</p>
+                        <p><strong>Horarios:</strong><br>
+                            Lunes a Viernes: 7:00–13:00 y 14:00–22:00<br>
+                            Sábado: 8:00–13:00<br>
+                            Domingo: Cerrado
+                        </p>
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.883032636968!2d-68.84880012358285!3d-32.93568037361066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e08a59a1b3c27%3A0xf7f5c87e3f4e4f9b!2sAv.%20San%20Mart%C3%ADn%20Sur%201010%2C%20M5504%20Godoy%20Cruz%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1696000000000!5m2!1ses!2sar" 
+                            width="100%" height="280" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
@@ -275,59 +572,80 @@
     <!-- CTA CONTACTO -->
     <section id="contacto" class="cta-section">
         <div class="container text-center position-relative">
-            <h2 class="fw-bold mb-3" style="font-size: 2.5rem; color: white;">¿Listo para transformarte?</h2>
+            <h2 class="fw-bold mb-3">¿Listo para transformarte?</h2>
             <p class="fs-5 mb-4">Contactanos ahora y comenzá tu cambio</p>
             <div class="cta-phone mb-4">
                 <i class="bi bi-whatsapp me-3"></i>0261 205-3824
             </div>
+            <div class="cta-buttons mb-4">
+                <a href="https://wa.me/5492612053824?text=Hola,%20quiero%20consultar%20sobre%20El%20Caverna%20Gym" target="_blank" rel="noopener" class="btn btn-light btn-lg me-2 mb-2">
+                    <i class="bi bi-whatsapp me-2"></i>Escribinos por WhatsApp
+                </a>
+                <a href="#faq" class="btn btn-outline-light btn-lg mb-2">
+                    <i class="bi bi-question-circle me-2"></i>Ver Preguntas Frecuentes
+                </a>
+            </div>
             <div class="mt-4">
-                <a href="https://www.instagram.com/elcavernagym" target="_blank" class="social-link">
+                <a href="https://www.instagram.com/elcavernagym" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
                     <i class="bi bi-instagram fs-4"></i>
                 </a>
-                <a href="https://www.facebook.com/elcabernagym" target="_blank" class="social-link">
+                <a href="https://www.facebook.com/elcabernagym" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
                     <i class="bi bi-facebook fs-4"></i>
                 </a>
-                <a href="https://wa.me/5492612053824" target="_blank" class="social-link">
+                <a href="https://wa.me/5492612053824" target="_blank" rel="noopener" class="social-link" aria-label="WhatsApp">
                     <i class="bi bi-whatsapp fs-4"></i>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="text-center">
+    <!-- FOOTER CON CRÉDITOS -->
+    <footer class="footer-section text-center">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 mb-3">
+                <div class="col-md-4 mb-4">
                     <h5 class="fw-bold mb-3">El Caverna Gym</h5>
                     <p class="small">El mejor gimnasio de Godoy Cruz, Mendoza. Tu transformación comienza aquí.</p>
                 </div>
-                <div class="col-md-4 mb-3">
+                <div class="col-md-4 mb-4">
                     <h5 class="fw-bold mb-3">Sucursales</h5>
                     <p class="small mb-1"><i class="bi bi-geo-alt-fill me-2"></i>Cervantes 1886</p>
                     <p class="small"><i class="bi bi-geo-alt-fill me-2"></i>Av. San Martín Sur 1010</p>
                 </div>
-                <div class="col-md-4 mb-3">
+                <div class="col-md-4 mb-4">
                     <h5 class="fw-bold mb-3">Seguinos</h5>
                     <div>
-                        <a href="https://www.instagram.com/elcavernagym" target="_blank" class="social-link">
+                        <a href="https://www.instagram.com/elcavernagym" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
                             <i class="bi bi-instagram"></i>
                         </a>
-                        <a href="https://www.facebook.com/elcabernagym" target="_blank" class="social-link">
+                        <a href="https://www.facebook.com/elcabernagym" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
                             <i class="bi bi-facebook"></i>
                         </a>
-                        <a href="https://wa.me/5492612053824" target="_blank" class="social-link">
+                        <a href="https://wa.me/5492612053824" target="_blank" rel="noopener" class="social-link" aria-label="WhatsApp">
                             <i class="bi bi-whatsapp"></i>
                         </a>
                     </div>
                 </div>
             </div>
             <hr style="border-color: rgba(255,255,255,0.2); margin: 2rem 0 1rem;">
-            <p class="small mb-0">&copy; 2025 El Caverna Gym · Todos los derechos reservados · Godoy Cruz, Mendoza</p>
+            <p class="small mb-2">&copy; 2025 El Caverna Gym · Todos los derechos reservados · Godoy Cruz, Mendoza</p>
+            <p class="footer-credits small mb-0">Diseñado por <a href="https://github.com/leandrocarpio" target="_blank" rel="noopener">Leandro Carpio</a></p>
         </div>
     </footer>
 
+    <!-- WHATSAPP FLOTANTE -->
+    <a href="https://wa.me/5492612053824?text=Hola,%20quiero%20consultar%20sobre%20El%20Caverna%20Gym" 
+       target="_blank" 
+       rel="noopener"
+       class="whatsapp-float" 
+       aria-label="Contactar por WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+        <span class="whatsapp-tooltip">¿Consultás? Escribinos</span>
+    </a>
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
+    <!-- Custom JS -->
+    <script type="module" src="assets/js/main.js"></script>
 </body>
 </html>

@@ -1,59 +1,70 @@
-// ===== JAVASCRIPT PERSONALIZADO PARA EL CAVERNA GYM =====
+// =============================================================================
+// MAIN.JS - Punto de entrada principal
+// =============================================================================
+// Orquesta la inicialización de la aplicación
+// Arquitectura: Separación de responsabilidades con ES Modules
+// ACTUALIZADO: Incluye inicialización del lightbox
+// =============================================================================
 
-// Smooth scroll para enlaces internos
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({ 
-                behavior: 'smooth', 
-                block: 'start' 
-            });
-            
-            // Cerrar navbar en móvil después de hacer clic
-            const navbarToggler = document.querySelector('.navbar-toggler');
-            const navbarCollapse = document.querySelector('.navbar-collapse');
-            if (navbarCollapse.classList.contains('show')) {
-                navbarToggler.click();
-            }
-        }
-    });
+import { UI } from './ui.js';
+import { CarouselManager } from './carousel.js';
+import { AnimationManager } from './animations.js';
+
+// =============================================================================
+// INICIALIZACIÓN
+// =============================================================================
+
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('🏋️ El Caverna Gym - Inicializando...');
+  inicializarApp();
 });
 
-// Efecto navbar al hacer scroll
-window.addEventListener('scroll', function() {
-    const navbar = document.querySelector('.navbar');
+/**
+ * Función principal de inicialización
+ */
+function inicializarApp() {
+  try {
+    // 1. Configurar navegación
+    configurarNavegacion();
     
-    if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-        navbar.style.boxShadow = '0 4px 20px rgba(29, 53, 87, 0.12)';
-    } else {
-        navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-        navbar.style.boxShadow = '0 2px 20px rgba(29, 53, 87, 0.08)';
-    }
-});
+    // 2. Inicializar carruseles
+    CarouselManager.inicializarCarruseles();
+    
+    // 3. Configurar animaciones
+    AnimationManager.inicializarAnimaciones();
+    
+    // 4. Inicializar contador de estadísticas
+    AnimationManager.inicializarContador();
+    
+    // 5. Inicializar lightbox de galería
+    UI.inicializarLightbox();
+    
+    console.log('✅ Aplicación inicializada correctamente');
+  } catch (error) {
+    console.error('❌ Error al inicializar:', error);
+  }
+}
 
-// Animación de elementos al hacer scroll (opcional)
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
+// =============================================================================
+// NAVEGACIÓN
+// =============================================================================
 
-const observer = new IntersectionObserver(function(entries) {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('animate-in');
-            observer.unobserve(entry.target);
-        }
-    });
-}, observerOptions);
+/**
+ * Configura la navegación suave y el comportamiento del navbar
+ */
+function configurarNavegacion() {
+  // Smooth scroll para enlaces internos
+  UI.configurarScrollSuave();
+  
+  // Efecto navbar al hacer scroll
+  UI.aplicarEfectoNavbar();
+  
+  // Cerrar menú mobile al hacer click en link
+  UI.cerrarMenuMobile();
+}
 
-// Observar todas las cards
-document.querySelectorAll('.card').forEach(card => {
-    observer.observe(card);
-});
+// =============================================================================
+// EXPORTACIONES
+// =============================================================================
 
-// Console log para desarrollo (opcional - puedes eliminarlo en producción)
-console.log('El Caverna Gym - Website cargado correctamente ✅');
-console.log('Desarrollado con ❤️ para El Caverna Gym');
+export { inicializarApp };
