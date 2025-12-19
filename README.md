@@ -13,7 +13,7 @@
 
 ## 🚀 Demo en Vivo
 
-**[Ver Demo →](https://leandrocarpio.github.io/El-caverna-gym/)**
+**[Ver Demo →](https://leandrocarpio.github.io/el-caverna-gym-landing/)**
 
 ![Hero El Caverna Gym](https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&h=400&fit=crop)
 
